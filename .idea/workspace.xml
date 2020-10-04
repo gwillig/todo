@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c94be28-6cb7-4dbe-9e0b-eec108965d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddTodo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/laylout/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607875195741</updated>
       <workItem from="1607875197433" duration="5990000" />
-      <workItem from="1607942639941" duration="6033000" />
+      <workItem from="1607942639941" duration="6438000" />
     </task>
     <servers />
   </component>
