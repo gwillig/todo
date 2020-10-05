@@ -16,51 +16,51 @@ class App extends Component{
             .get('https://jsonplaceholder.typicode.com/todos?_limit=10')
             .then(res => this.setState({ todos: res.data }));
     }
+    delTodo = (id) =>{
+        /*
+        * @descriptipon
+        *  Marks a given DotoItem
+        * */
+        this.setState(
+            {todos:this.state.todos.filter(todo=>{
+                    return todo.id!==id
 
-    render (){
-        let delTodo = (id) =>{
-            /*
-            * @descriptipon
-            *  Marks a given DotoItem
-            * */
-            this.setState(
-                {todos:this.state.todos.filter(todo=>{
-                        return todo.id!=id
+                })
 
-                    })
-
-                }
-
-                )
-
-        }
-        let markComplete = (id) =>{
-            /*
-            * @descriptipon
-            *  Delete a given DotoItem
-            * */
-            this.setState(
-                {todos:this.state.todos.map(todo=>{
-                        if (todo.id===id){
-                            todo.completed =!todo.completed
-                        }
-                        return todo
-                    })
-
-                }
-
-            )
-
-        }
-       let addTodo=(title)=>{
-            console.log(title)
-            const newTodo={
-                id:uuidv4(),
-                title:title,
-                completed:false
             }
-            this.setState({todos:[...this.state.todos,newTodo]})
-       }
+
+        )
+
+    }
+    markComplete = (id) =>{
+        /*
+        * @descriptipon
+        *  Delete a given DotoItem
+        * */
+        this.setState(
+            {todos:this.state.todos.map(todo=>{
+                    if (todo.id===id){
+                        todo.completed =!todo.completed
+                    }
+                    return todo
+                })
+
+            }
+
+        )
+
+    }
+    addTodo=(title)=>{
+        console.log(title)
+        const newTodo={
+            id:uuidv4(),
+            title:title,
+            completed:false
+        }
+        this.setState({todos:[...this.state.todos,newTodo]})
+    }
+    render (){
+
        return(
            <Router>
                <div className="App">
@@ -68,11 +68,11 @@ class App extends Component{
                        <Header></Header>
                        <Route exact path="/" render={props=>(
                            <React.Fragment>
-                               <AddTodo addTodo={addTodo}></AddTodo>
+                               <AddTodo addTodo={this.addTodo}></AddTodo>
                                <Todos
                                    todos={this.state.todos}
-                                   markComplete={markComplete}
-                                   delTodo={delTodo}
+                                   markComplete={this.markComplete}
+                                   delTodo={this.delTodo}
                                ></Todos>
                            </React.Fragment>
                        )}
@@ -88,5 +88,7 @@ class App extends Component{
 
   }
 }
+
+
 
 export default App;

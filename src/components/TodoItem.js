@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
+import PropTypes from 'prop-types'
 
 // Hier weiter machen: https://youtu.be/sBws8MSXN7A?t=2727
 function TodoItem(todo) {
@@ -11,10 +12,6 @@ function TodoItem(todo) {
         borderRadius: "50%",
         cursor: "pointer",
         float: "right",
-    }
-    const itemStyle = {
-        backgroundColor:'#f4f4f4',
-
     }
 
     let getStyle = ()=>{
@@ -45,8 +42,12 @@ function TodoItem(todo) {
         </div>
 
     )
+}
 
-
+TodoItem.propTypes = {
+    todo: PropTypes.object.isRequired,
+    markComplete: PropTypes.func.isRequired,
+    delTodo: PropTypes.func.isRequired,
 }
 
 export default TodoItem;

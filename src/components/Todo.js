@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import TodoItem from "./TodoItem";
+import PropTypes from 'prop-types'
 
 function Todos(props) {
     return props.todos.map((todoItem)=>(
@@ -14,5 +15,10 @@ function Todos(props) {
     )
 
 }
+
+Todos.propTypes = {
+    todos: PropTypes.array.isRequired
+}
+
 
 export default Todos;
